@@ -1,0 +1,82 @@
+
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em; /* Large title */
+  color: #2c3e50; /* Dark blue-gray color for the main title */
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: #007bff; /* Blue color for sections */
+  font-size: 1.8em;
+  margin-top: 1em;
+}
+
+h3 {
+  color: #73adea; /* Blue color for sections */
+  font-size: 1.8em;
+  margin-top: 1em;
+}
+
+/* Code chunk styling */
+pre, code {
+  background-color: #f8f8f8; /* Light gray background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding inside the code chunk */
+  display: block; /* Ensures the background spans the entire width */
+  overflow-x: auto; /* Allows horizontal scrolling for long lines */
+}
+
+/* Floating TOC styles */
+#TOC {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  width: 250px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e4e8;
+  z-index: 1000;
+}
+
+#TOC ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#TOC li {
+  margin-bottom: 8px;
+}
+
+#TOC a {
+  color: hsl(212, 37%, 52%);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#TOC a:hover {
+  color: hsl(212, 37%, 52%);
+  text-decoration: underline;
+}
+
+/* Centering only YAML info */
+.yaml-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
